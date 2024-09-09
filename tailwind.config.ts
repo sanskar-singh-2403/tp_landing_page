@@ -7,12 +7,21 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+    extend: {colors: {
+      gray: {
+        900: '#111827',
+        800: '#1F2937',
+        700: '#374151',
+        400: '#9CA3AF',
+      },
+      blue: {
+        400: '#60A5FA',
       },
     },
+    fontSize: {
+      '6xl': '4rem',
+    },
+  },
   },
   plugins: [],
 };
