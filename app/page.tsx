@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import CareersSection from './components/CarrerSection';
+import Form from './components/Form';
 
 export default function Home() {
   return (
@@ -7,22 +8,22 @@ export default function Home() {
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="relative h-screen flex items-center justify-center">
-        <Image
-          src="/space-background.jpg"
-          alt="Futuristic landscape with planets"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-70"></div>
-        <div className="relative z-10 text-center">
-          <h1 className="text-6xl font-bold mb-4">TimePilot</h1>
-          <p className="text-xl max-w-2xl mx-auto">
-            Enhancing human productivity in an AI-augmented world.
-          </p>
-        </div>
-      </section>
+          <Image
+            src="/space-background.jpg"
+            alt="Futuristic landscape with planets"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-70"></div>
+          <div className="relative z-10 text-center">
+            <h1 className="text-6xl font-bold mb-4">TimePilot</h1>
+            <p className="text-xl max-w-2xl mx-auto">
+              Enhancing human productivity in an AI-augmented world.
+            </p>
+          </div>
+        </section>
 
         {/* About TimePilot Section */}
         <section className="max-w-3xl mx-auto px-4 py-16 text-center">
@@ -51,37 +52,7 @@ export default function Home() {
         </section>
 
         {/* Call to Action Section */}
-        <section className="max-w-3xl mx-auto px-4 py-16 text-center">
-        <h2 className="text-3xl font-bold mb-8">Ready to Boost Your Productivity?</h2>
-        <form className="max-w-md mx-auto">
-          <div className="mb-4">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              className="w-full px-3 py-2 text-gray-700 bg-white border rounded-lg focus:outline-none focus:border-blue-500"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-              className="w-full px-3 py-2 text-gray-700 bg-white border rounded-lg focus:outline-none focus:border-blue-500"
-              required
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Join The Waitlist 
-          </button>
-        </form>
-      </section>
+        <Form />
       </main>
 
       <footer className="py-4 text-center text-sm text-gray-400">
